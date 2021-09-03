@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goku_wallpaper"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Passcode">
+
+    <com.mukesh.OtpView
+
+        android:id="@+id/otp_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberPassword"
+        android:itemBackground="#E8DFDF"
+        android:text=""
+        android:textColor="#080809"
+
+        android:textSize="18sp"
+        app:OtpItemCount="6"
+        app:OtpLineColor="#F3EDED"
+        app:OtpViewType="line" />
+
+    <com.mukesh.OtpView
+        android:id="@+id/otp_confirm_passcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:inputType="numberPassword"
+        android:itemBackground="#F1EBEB"
+        android:text=""
+        android:textColor="#080809"
+        android:textSize="18sp"
+        app:OtpItemCount="6"
+        app:OtpLineColor="#F3EDED"
+        app:OtpViewType="line" />
+</LinearLayout>
